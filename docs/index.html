@@ -5,175 +5,67 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intera11</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script type="module" crossorigin src="./assets/index-5faa8063.js"></script>
+    <link rel="stylesheet" href="./assets/index-d6e16d47.css">
   </head>
   <body>
     <main class="main">
-      <section>
-        <div class="wrapper">
-          <h1>Swiper.jsのサンプル</h1>
-          <div class="sample-swiper carousel">
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="item item__blue">1</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__yellow">2</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__red">3</div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-      
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            <!-- Slider main container -->
-          </div>
-      
-          <h2 id="fade">フェードエフェクトを使用した例</h2>
-          <div class="sample-swiper-fade carousel">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="item item__yellow">1</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__red">2</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__blue">3</div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-      
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-      
-          <h2 id="coverflow">カバーフローエフェクトを使用した例</h2>
-          <div class="sample-swiper-coverflow carousel">
-              <!-- Slider main container -->
-              <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="item item__red">1</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="item item__blue">2</div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="item item__yellow">3</div>
-                  </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-      
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-          </div>
-      
-          <h2 id="cards">カードエフェクトを使用した例</h2>
-          <div class="sample-swiper-cards carousel">
-            <!-- Slider main container -->
-            <div class="swiper-container visible">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="item item__red">1</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__blue">2</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__yellow">3</div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-      
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-      
-          <h2 id="creative">クリエイティブエフェクトを使用した例</h2>
-          <div class="sample-swiper-creative carousel">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="item item__red">1</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__blue">2</div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item item__yellow">3</div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-      
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
+      <h1>カルーセルUIを考えてみる</h1>
+      <section id="image-carousel" class="splide" aria-label="お気に入りの写真">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./assets/banner1-3bafd9de.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./assets/banner2-2a87c82b.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./assets/banner3-ca6439ed.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./assets/banner1-3bafd9de.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./assets/banner2-2a87c82b.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="./assets/banner3-ca6439ed.jpg" alt="">
+            </li>
+          </ul>
         </div>
+        <button class="splide__toggle" type="button">
+          <svg
+            class="splide__toggle__play"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="m22 12-20 11v-22l10 5.5z"/>
+          </svg>
+          <svg
+            class="splide__toggle__pause"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1v22h7v-22zm13 0v22h7v-22z"/>
+          </svg>
+        </button>
+
+        <!-- <div class="splide-controller">
+          <ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show">
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide01" aria-label="Go to slide 1" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="splide01-slide02" aria-label="Go to slide 2" aria-selected="true"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide03" aria-label="Go to slide 3" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide04" aria-label="Go to slide 4" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide05" aria-label="Go to slide 5" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide06" aria-label="Go to slide 6" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide07" aria-label="Go to slide 7" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide08" aria-label="Go to slide 8" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide09" aria-label="Go to slide 9" tabindex="-1"></button></li>
+            <li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide10" aria-label="Go to slide 10" tabindex="-1"></button></li>
+          </ul>
+        </div> -->
       </section>
-      <section>
-        <div class="container">
-          <h2>Viva Magenta</h2>
-          <h3>Color of the Year 2023: PANTONE 18-1750 Viva Magenta</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ratione animi voluptates quo dicta officia iusto porro earum. Placeat ut aliquam quos. Assumenda sint itaque, fugit ducimus nemo nesciunt exercitationem.
-            Labore, nemo. Reprehenderit, sapiente autem repudiandae repellendus numquam unde quam omnis, minima neque commodi veritatis nisi fugiat illo sunt illum nesciunt. Accusamus iure temporibus odio harum expedita veritatis ut alias.
-            Beatae veniam cumque assumenda doloribus illum quod quae. Quia nam consectetur repellat error quos adipisci, voluptatibus recusandae culpa? Iure eum cumque totam qui exercitationem rerum facere! Mollitia aperiam sapiente assumenda.
-            Tenetur aliquid iusto id earum illum quis corrupti consequatur alias ad eum ipsa delectus nostrum, quaerat at quos veritatis facere eligendi, dolores consectetur. Beatae dolorum nesciunt voluptatum amet accusantium dolores?
-            Omnis culpa possimus ad sint molestiae ipsa assumenda repudiandae temporibus debitis similique dolorem, perspiciatis repellat animi rerum eligendi quas natus magnam ea alias expedita autem? Ipsam consequatur officia officiis accusamus!
-            Adipisci soluta quidem laborum culpa molestiae, perferendis minus quae quos, aspernatur perspiciatis ullam facere eum tempora officiis nihil itaque porro? Sint rerum aspernatur architecto mollitia nemo voluptatem dolorum ipsa nesciunt?
-            Ipsam praesentium velit laudantium. Quasi temporibus corrupti similique accusamus eaque nulla nobis facere vel quaerat est sed assumenda tempora nam, voluptatum obcaecati fugit quos minima ab quae incidunt. Excepturi, ducimus?
-            In laborum ex eligendi, deserunt ipsam nesciunt dignissimos aspernatur voluptate enim atque praesentium voluptas aliquid reprehenderit voluptatum distinctio quam repellendus aperiam tempora unde, tenetur recusandae qui laboriosam quis architecto? Sint!
-            Voluptatem recusandae sunt, eaque omnis debitis soluta consequatur a! Vero ea tenetur, architecto quae, deleniti beatae ullam officia voluptas distinctio ipsam eligendi laudantium! Corporis, hic consequatur iusto deserunt possimus recusandae.
-            Adipisci laboriosam corporis mollitia facere odio? Animi laborum tenetur vero temporibus, velit cumque ratione. Non harum, fuga, iusto dignissimos suscipit quod animi totam ad vero, et inventore ipsum accusantium veniam!
-            Obcaecati, earum maxime quae aperiam, sapiente voluptatibus iste provident ad amet ex et deserunt dicta. Laborum consequatur voluptatum aperiam reiciendis maiores quos asperiores unde, sed dolore fugit voluptate dolor alias?
-            Aut accusamus quaerat, laboriosam neque error similique quasi repellendus, labore sit praesentium debitis! Placeat illo magnam asperiores veritatis dolorum sit laboriosam quidem at ducimus quisquam natus, amet hic, commodi modi.
-            Dignissimos temporibus, maxime ex, dolorum mollitia soluta distinctio modi iusto recusandae alias ab quod eos earum cupiditate cumque molestiae eum. Iusto atque eligendi sint illo unde inventore, dolore saepe veritatis?
-            Dignissimos, deserunt ex. Hic officia odio at ratione dignissimos maxime accusamus ipsum non sit quasi pariatur laboriosam fuga facere, voluptatum earum amet suscipit nobis, similique optio eaque unde illo aliquid!
-            Iure, alias laboriosam veritatis quos ea consequuntur labore optio! Aliquid esse rerum quaerat corrupti facilis, quibusdam odio repellendus mollitia nisi dolores nulla ipsa non eos expedita dolore ad impedit odit?
-            Quod veritatis assumenda beatae voluptatibus fuga eligendi minima numquam aperiam provident earum! Tenetur praesentium asperiores corporis quibusdam atque, accusantium est quas perspiciatis quam ut esse maxime alias nobis saepe sint?
-            Magni sunt ex voluptatem illum ratione accusantium fugiat autem laboriosam mollitia quisquam quae minus quo consectetur labore ad, aspernatur accusamus vel repudiandae quia maiores itaque nam veritatis. Distinctio, iure nemo.
-          </p>
-        </div>
-      </section>
-      <div class="wave"></div>
     </main>
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
-    <script type="text/javascript" src="./js/main.js"></script>
+    
   </body>
 </html>

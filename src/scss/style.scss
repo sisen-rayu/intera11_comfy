@@ -1,220 +1,104 @@
-// * {
-//   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
+* {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #292929;
+}
+
+h1 {
+  color: pink;
+  text-align: center;
+  padding-top: 50px;
+}
+.test {
+  color: pink;
+}
+
+.splide {
+  width: 950px;
+  // background: rgb(32, 32, 32);
+  text-align: center;
+  margin:50px auto 0;
+  &__slide {
+    img {
+      width: 300px;
+      object-fit: cover;   
+    }
+  }
+  &__toggle {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -5rem;
+    align-items: center;
+    background: #737e80;
+    border-radius: 50%;
+    display: inline-flex;
+    height: 4rem;
+    justify-content: center;
+    margin: 10px 20rem 0 0;
+    transition: background-color .2s ease;
+    width: 4rem;
+    border: 1px solid white;
+    z-index: 2;
+    svg {
+    fill: #e5eeee;
+    background: #737e80;
+    height: 46%;
+    transition: fill .2s ease;
+    width: 46%;
+    }
+  }
+  &__pagination {
+      // bottom: -3.5rem;
+      transform: translateY(50px);
+      left: 50%;
+      position: absolute;
+      // transform: translateX(-50%);
+      width: 100%;
+      height: 16px;
+      &__page {
+        // background: #95a5a6;
+        // border: 0;
+        // border-radius: 50%;
+        // display: inline-block;
+        // height: 10px;
+        // margin: 0 0.1rem;
+        // padding: 0;
+        // position: relative;
+        // transition: background-color .2s ease,color .2s ease;
+        // width: 10px;
+        // &.is-active {
+        //   background: #b4e900;
+        // }
+      }
+  }    
+}
+
+.splide__toggle.is-active .splide__toggle__play, .splide__toggle__pause {
+  display: none;
+}
+
+
+// .material-symbols-outlined {
+//   font-variation-settings:
+//   'FILL' 0,
+//   'wght' 400,
+//   'GRAD' 0,
+//   'opsz' 48
 // }
 
-// body {
-//   background-color: #E5CCAF;
-//   color: #fff;
+// .material-symbols-outlined {
+//   font-variation-settings:
+//   'FILL' 0,
+//   'wght' 400,
+//   'GRAD' 0,
+//   'opsz' 48
 // }
 
-// section {
-//   min-height: 100vh;
-//   width: 100%;
-//   background-color: #BE3455; //viva
-//   &:nth-child(2) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     background-color: #E38298;
-//     padding: 5rem;
-//     margin-top: 50rem;
-//     position: relative;
-//     z-index: 3;
-//     &::before {
-//       content: '';
-//       position: absolute;
-//       left: 0;
-//       top: 0;
-//       width: 100%;
-//       height: 30%;
-//       background-image: linear-gradient(to top,#000, transparent);
-//       transform: translateY(-100%);
-//     }
-//   }
-// }
-
-// h1 {
-//   position: absolute;
-//   top: 35%;
-//   left: 50%;
-//   transform: translate(-50%, -35%);
-//   z-index: 2;
-//   color: rgb(241, 212, 178);
-//   text-shadow: 0 0 .01em rgb(240, 202, 211);
-//   font-size: 40px;
-//   letter-spacing: 0.7em;
-// }
-
-// h2 {
-//   font-size: 30px;
-//   margin-bottom: 10px;
-//   color: #B3B1A1;
-// }
-
-// img {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   pointer-events: none;
-//   clip-path: circle(50px at center);
-// }
 
 // ===================================================================
 // scroll
 // ===================================================================
 // scroll barrrrrrrrr
-// ::-webkit-scrollbar {
-//   width: 0;
-// }
-
-// #scrollPath {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   width: 10px;
-//   height: 100%;
-//   background: rgba(255,255,255,0.05);
-// }
-
-// #progressbar {
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   width: 10px;
-//   border-radius: 5px;
-//   // height: 100%;
-//   background: linear-gradient(to top, #BB2649, #EDCDC2);
-//   animation: animate 5s linear infinite;
-//   z-index: 100;
-// }
-
-// @keyframes animate
-// {
-//   //hue-rotate=>色相環を回転させる
-//   0% {
-//     filter: hue-rotate(0deg);
-//   }
-//   100% {
-//     filter: hue-rotate(0deg);
-//   }
-//   50% {
-//     filter: hue-rotate(360deg);
-//   }
-// }
-
-// #progressbar::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: rgba(255,255,255,0.05);
-//   filter: blur(10px);
-//   z-index: 100;
-// }
-
-// #progressbar::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: rgba(255,255,255,0.05);
-//   filter: blur(30px);
-//   z-index: 100;
-// }
-
-
-/***************************************************
-// svg animation
-**************************************************/
-// .heading {
-//   position: absolute;
-//   top: 30%;
-//   left: 50%;
-//   transform: translate(-50%, -30%);
-//   z-index: 1;
-// }
-
-// svg .svg-elem-1 {
-//   stroke-dashoffset: 1843.5140380859375px;
-//   stroke-dasharray: 1843.5140380859375px;
-//   fill: transparent;
-//   animation:new-written 6s infinite alternate;
-//   transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
-//   fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
-// }
-
-
-// @keyframes new-written {
-//   0% {
-//     stroke-dashoffset:0px;
-//   }
-//   100% {
-//     stroke-dashoffset:1843.5140380859375px;
-//   }
-//   }
-
-
-  body {
-    padding-bottom: 400px;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  .wrapper {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    overflow-x: hidden;
-  }
-  @media (max-width: 768px) {
-    .wrapper {
-      padding: 0 20px;
-    }
-  }
-  h1 {
-    margin-bottom: 1em;
-    font-size: 2em;
-  }
-  h2 {
-    text-align: center;
-    font-weight: normal;
-  }
-  
-  .carousel-wrapper {
-    position: relative;
-  }
-  .carousel {
-    height: 540px;
-    margin-bottom: 3em;
-  }
-  .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 540px;
-    text-align: center;
-    color: #fff;
-    font-size: 32px;
-    font-weight: bold;
-  }
-  .item__blue {
-    background: rgb(68 174 255);
-  }
-  .item__red {
-    background: rgb(248 82 1);
-  }
-  .item__yellow {
-    background: rgb(255 213 27);
-    color: #585858;
-  }
